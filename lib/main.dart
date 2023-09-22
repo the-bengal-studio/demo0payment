@@ -250,7 +250,7 @@ class _FreeCodeState extends State<FreeCode> {
                   Text('Console: Payment Failed, Message: $hasError'),
 
 
-                SizedBox(height: 200,),
+                SizedBox(height: 20,),
 
                 // KhaltiServicepublicKey
                 // KhaltiServicemobile
@@ -363,10 +363,11 @@ class _FreeCodeState extends State<FreeCode> {
                       ),
                     );
                   },
-                  child: Text('Pay with Khalti Example App'),
+                  child: Text('Khalti Example App'),
                 ),
 
 
+                SizedBox(height: 200,),
 
 
                 // TextFormField(
