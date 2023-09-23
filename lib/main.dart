@@ -284,63 +284,6 @@ class _FreeCodeState extends State<FreeCode> {
 
                 SizedBox(height: 200,),
 
-
-                // TextFormField(
-                //   validator: (v) => (v?.isEmpty ?? true) ? 'Required ' : null,
-                //   decoration: const InputDecoration(
-                //     label: Text('Mobile Number'),
-                //   ),
-                //   controller: _mobileController,
-                // ),
-                // TextFormField(
-                //   validator: (v) => (v?.isEmpty ?? true) ? 'Required ' : null,
-                //   decoration: const InputDecoration(
-                //     label: Text('Khalti MPIN'),
-                //   ),
-                //   controller: _pinController,
-                // ),
-                // const SizedBox(height: 24),
-                // ElevatedButton(
-                //   onPressed: () async {
-                //     if (!(_formKey.currentState?.validate() ?? false)) return;
-                //     final messenger = ScaffoldMessenger.maybeOf(context);
-                //     final initiationModel = await Khalti.service.initiatePayment(
-                //       request: PaymentInitiationRequestModel(
-                //         amount: 1000,
-                //         mobile: _mobileController.text,
-                //         productIdentity: 'mac-mini',
-                //         productName: 'Apple Mac Mini',
-                //         transactionPin: _pinController.text,
-                //         productUrl: 'https://khalti.com/bazaar/mac-mini-16-512-m1',
-                //         additionalData: {
-                //           'vendor': 'Oliz Store',
-                //           'manufacturer': 'Apple Inc.',
-                //         },
-                //       ),
-                //     );
-                //
-                //     final otpCode = await _showOTPSentDialog();
-                //
-                //     if (otpCode != null) {
-                //       try {
-                //         final model = await Khalti.service.confirmPayment(
-                //           request: PaymentConfirmationRequestModel(
-                //             confirmationCode: otpCode,
-                //             token: initiationModel.token,
-                //             transactionPin: _pinController.text,
-                //           ),
-                //         );
-                //
-                //         debugPrint(model.toString());
-                //       } catch (e) {
-                //         messenger?.showSnackBar(
-                //           SnackBar(content: Text(e.toString())),
-                //         );
-                //       }
-                //     }
-                //   },
-                //   child: const Text('PAY Rs. 10'),
-                // ),
               ],
             ),
           ),
