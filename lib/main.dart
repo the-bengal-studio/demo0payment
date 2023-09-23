@@ -2,6 +2,7 @@
 // Link: https:thebengalstudio.com
 // This app use for demo.
 
+import 'package:demo_payment_esewa/feropay_demo.dart';
 import 'package:demo_payment_esewa/khalti_demo.dart';
 import 'package:esewa_flutter/esewa_flutter.dart';
 import 'package:flutter/foundation.dart';
@@ -252,107 +253,6 @@ class _FreeCodeState extends State<FreeCode> {
 
                 SizedBox(height: 20,),
 
-                // KhaltiServicepublicKey
-                // KhaltiServicemobile
-                // KhaltiServiceproductName
-                // KhaltiServiceproductIdentity
-                // KhaltiServicetransactionPin
-                // KhaltiServiceproductUrl
-                // KhaltiService
-                // KhaltiService
-                // KhaltiService
-                // KhaltiService
-                //
-                // TextField(
-                //   decoration:
-                //   InputDecoration(hintText: 'publicKey', labelText: 'publicKey'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServicepublicKey = text;
-                //     });
-                //   },
-                // ),
-                //
-                // TextField(
-                //   decoration: InputDecoration(hintText: 'mobile', labelText: 'mobile'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServicemobile = text;
-                //     });
-                //   },
-                // ),
-                // TextField(
-                //   decoration:
-                //   InputDecoration(hintText: 'productIdentity', labelText: 'productIdentity'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServiceproductIdentity = text;
-                //     });
-                //   },
-                // ),
-                //
-                // TextField(
-                //   decoration: InputDecoration(hintText: 'productName', labelText: 'productName'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServiceproductName = text;
-                //     });
-                //   },
-                // ),
-                // TextField(
-                //   decoration:
-                //   InputDecoration(hintText: 'transactionPin', labelText: 'transactionPin'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServicetransactionPin = text;
-                //     });
-                //   },
-                // ),
-                //
-                // TextField(
-                //   decoration: InputDecoration(hintText: 'productUrl', labelText: 'productUrl'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiServiceproductUrl = text;
-                //     });
-                //   },
-                // ),
-                // TextField(
-                //   decoration:
-                //   InputDecoration(hintText: 'publicKey', labelText: 'publicKey'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiService = text;
-                //     });
-                //   },
-                // ),
-                //
-                // TextField(
-                //   decoration: InputDecoration(hintText: 'scd', labelText: 'both'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiService = text;
-                //     });
-                //   },
-                // ),
-                // TextField(
-                //   decoration:
-                //   InputDecoration(hintText: 'publicKey', labelText: 'publicKey'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiService = text;
-                //     });
-                //   },
-                // ),
-                //
-                // TextField(
-                //   decoration: InputDecoration(hintText: 'scd', labelText: 'both'),
-                //   onChanged: (text) {
-                //     setState(() {
-                //       KhaltiService = text;
-                //     });
-                //   },
-                // ),
                 TextButton(
                   onPressed: () async {
                     Navigator.push(
@@ -366,6 +266,21 @@ class _FreeCodeState extends State<FreeCode> {
                   child: Text('Khalti Example App'),
                 ),
 
+
+                SizedBox(height: 20,),
+
+                TextButton(
+                  onPressed: () async {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                        const FonePayApp(title: "Fero Pay",),
+                      ),
+                    );
+                  },
+                  child: Text('Fero Pay Example App'),
+                ),
 
                 SizedBox(height: 200,),
 
